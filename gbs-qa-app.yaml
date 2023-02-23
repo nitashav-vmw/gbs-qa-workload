@@ -1,0 +1,19 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: gbs-qa-app 
+  namespace: gbs-qa
+spec:
+  serviceAccountName: default
+  fetch:
+  - git:
+      url: https://github.com/nitashav-vmw/gbs-qa-workload.git
+      ref: origin/master
+      subPath: config
+
+  template:
+  - ytt: {}
+
+  deploy:
+  - kapp: {}
+

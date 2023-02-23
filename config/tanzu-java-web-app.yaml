@@ -5,12 +5,12 @@ metadata:
     app.kubernetes.io/part-of: tanzu-java-web-app
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-  name: tanzu-java-web-app-git
+  name: tanzu-java-web-app
   namespace: gbs-qa 
 spec:
   params:
   - name: gitops_repository
-    value: ssh://git@github.com/nitashav-vmw/ops
+    value: ssh://git@github.com/nitashav-vmw/ops.git
   - name: gitops_branch
     value: tanzu-java-web-app
   - name: gitops_ssh_secret
