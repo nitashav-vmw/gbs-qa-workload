@@ -12,7 +12,7 @@ spec:
   - name: gitops_repository
     value: ssh://git@github.com/nitashav-vmw/ops.git
   - name: gitops_branch
-    value: tanzu-java-web-app
+    value: main
   - name: gitops_ssh_secret
     value: git-ssh
   source:
