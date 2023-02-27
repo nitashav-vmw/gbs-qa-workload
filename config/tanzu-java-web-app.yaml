@@ -15,8 +15,12 @@ spec:
     value: main
   - name: gitops_ssh_secret
     value: git-ssh
-  - name: sub_path
-    value: config/tanzu-java-web-app
+  - name: gitops_server_address
+    value: ssh://git@github.com
+  - name: gitops_repository_owner
+    value: nitashav-vmw
+  - name: gitops_repository_name
+    value: ops
   source:
     git:
       ref:
