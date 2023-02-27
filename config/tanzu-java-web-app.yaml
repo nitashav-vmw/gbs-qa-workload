@@ -15,6 +15,8 @@ spec:
     value: main
   - name: gitops_ssh_secret
     value: git-ssh
+  - name: sub_path
+    value: config/tanzu-java-web-app
   source:
     git:
       ref:
